@@ -2,6 +2,16 @@
   background: url("../../../../img/showcase.png") no-repeat center center/cover;
   height: 85vh;
   top: 0;
+  position: relative;
+}
+
+.Overlay {
+  position: absolute;
+  top: 0;
+  left: 0;
+  background-color: rgb(0, 0, 0, 0.5);
+  height: 100%;
+  width: 100%;
 }
 
 .Container {
