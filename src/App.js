@@ -1,5 +1,5 @@
 import React, { Component } from 'react';
-import { Router, Route, Switch } from 'react-route-dom';
+import { BrowserRouter as Router, Route, Switch } from 'react-router-dom';
 import './App.css';
 
 // Pages
@@ -10,7 +10,7 @@ class App extends Component {
   render() {
     return (
       <Router>
-        <Switch>
+        <Switch className='App'>
           <Route exact path='/' component={MainPage} />
           <Route exact path='/music_player' component={MusicPlayer} />
         </Switch>

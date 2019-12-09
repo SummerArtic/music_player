@@ -1,3 +1,8 @@
-.App {
-  text-align: center;
+.RedSpan {
+  color: #f23005;
+}
+
+button {
+  padding: 1rem 1.5rem;
+  color: #fff;
 }

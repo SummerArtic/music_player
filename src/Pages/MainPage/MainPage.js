@@ -1,14 +1,19 @@
 import React, { Component } from 'react';
-import { Link } from 'react-route-dom';
-import './App.css';
+
+// Page's parts
+import Showcase from './components/Showcase/Showcase';
+import Article from './components/Article/Article';
+import Footer from './components/Footer/Footer';
+
+
 
 class MainPage extends Component {
   render() {
     return (
       <div className='MainPage'>
-
-        <Link to='/'>Home</Link>
-        <Link to='/music_player'>Music Player</Link>
+        <Showcase />
+        <Article />
+        <Footer />
       </div>
     );
   }
