@@ -3,13 +3,14 @@ import { Link } from 'react-router-dom';
 import Navbar from '../Navbar';
 import classes from './Showcase.module.css';
 import Button from '../Common/Button'
+import Container from '../Common/Container';
 
 
 const Showcase = (props) => {
   return (
     <section className={classes.Showcase}>
       <div className={classes.Overlay}>
-        <div className={classes.Container}>
+        <Container>
           <Navbar />
           <h1 className={classes.ShowcaseHeaderSmall}>Welcome to the world of <br />
             <span className={classes.ShowcaseHeaderBig}><span className='RedSpan'>FREEDOM</span> MUSIC</span></h1>
@@ -18,7 +19,7 @@ const Showcase = (props) => {
             <Button color={'white'}><Link to='/music_player'>Start Now</Link></Button>
             <Button color={'red'}><a href='#about'>Learn More</a></Button>
           </div>
-        </div>
+        </Container>
       </div>
     </section>
   )

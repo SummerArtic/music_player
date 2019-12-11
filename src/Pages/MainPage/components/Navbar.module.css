@@ -12,10 +12,12 @@ nav {
 
 .Navbar li {
   display: inline-block;
-  padding: 0.7rem 1rem;
+  text-align: center;
+  padding: 1rem 0;
+  margin: 0 1rem;
 }
 
-li:hover > a {
+li:hover {
   color: #f23005;
   border-bottom: 2px solid #f23005;
 }
@@ -24,4 +26,14 @@ li:hover > a {
   background: url("../../../img/logo.png") no-repeat center center/cover;
   width: 70px;
   height: 70px;
+  margin-right: 1rem;
+}
+
+@media (max-width: 800px) {
+  .Logo {
+    display: none;
+  }
+}
+
+@media (max-width: 400px) {
 }

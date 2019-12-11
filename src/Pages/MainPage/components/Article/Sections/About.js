@@ -33,7 +33,14 @@ const AboutFlex = styled.section`
   justify-content: space-between;
   height: 100%;
   z-index: 2;
-  margin-bottom: 2rem;
+
+  @media (max-width: 800px) {
+    flex: none;  
+  }
+
+  @media (max-width: 400px) {
+    
+  }
 `
 
 const FlexItem1 = styled.div`
@@ -41,15 +48,26 @@ const FlexItem1 = styled.div`
   display: flex;
   flex-direction: column;
   margin-left: 10%;
+  margin-bottom: 3rem;
+
+  @media (max-width: 800px) {
+    max-width: 80%;  
+    margin: auto;
+  }
 `
 
 
 const FlexItem2 = styled.div`
-  background: url(${BackgroundImage})no-repeat left top/cover;
-  width: 100%;
+  background: url(${BackgroundImage})no-repeat left top;
+  background-size: auto auto cover;
+  width: auto;
   height: auto;
   flex: 9;
   margin-left: 2rem;
+
+  @media (max-width: 800px) {
+    display: none;    
+  }
 `;
 
 const TextPartFlex = styled.div`

@@ -16,7 +16,7 @@ const HRed = styled.h3`
   background-color: #f23005;
   text-align: center;
   padding-top: 1rem;
-  
+  margin-top: 1rem;
 `
 
 
