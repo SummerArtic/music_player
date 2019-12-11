@@ -1,11 +1,16 @@
 import React from 'react';
+import styled from 'styled-components';
 
 const Info = (props) => {
   return (
-    <section>
+    <InfoSection>
 
-    </section>
+    </InfoSection>
   )
 }
+
+const InfoSection = styled.section`
+
+`;
 
 export default Info;

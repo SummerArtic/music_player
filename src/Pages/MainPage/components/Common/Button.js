@@ -1,25 +1,45 @@
 import React from 'react';
 import styled from 'styled-components'
 
-const Button = (props) => {
+const buttonThemes = {
+  white: {
+    color: '#f23005',
+    bgColor: 'transparent',
+    border: '2px solid #fff'
+  },
+  red: {
+    color: '#fff',
+    bgColor: '#f23005',
+    border: '2px solid #f23005',
+  }
+};
+
+const Button = ({
+  color,
+  children
+}) => {
   return (
-    <CommonButton>{props.children}</CommonButton>
+    <StyledButton color={buttonThemes[color]}>{children}</StyledButton>
   )
 }
 
-const CommonButton = styled.button`
+const StyledButton = styled.button`
     display: inline-block;
-    padding: 1rem 1.5rem;
-    color: #fff;
+    padding: 1rem 3rem;
+    margin-left: 1.5rem;
+    color: ${props => props.color.color};
     text-transform: uppercase;
-    background-color: rgba(0, 0, 0, 0);
-    border: none;
+    background-color: ${props => props.color.bgColor};
+    border: ${props => props.color.border}
     
     &:hover {
       opacity: 0.7;
-      color: #f23005;
+      background-color: #fff;
+      border: 2px solid #fff;
+      a {
+        color: #f23005; 
+      }
     }
 `
-
 
 export default Button;

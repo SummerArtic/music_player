@@ -12,15 +12,16 @@ nav {
 
 .Navbar li {
   display: inline-block;
-  padding: 0.7rem 0 1rem 1rem;
+  padding: 0.7rem 1rem;
 }
 
-li:hover {
-  border-bottom: 1px solid #f23005;
+li:hover > a {
+  color: #f23005;
+  border-bottom: 2px solid #f23005;
 }
 
 .Logo {
   background: url("../../../img/logo.png") no-repeat center center/cover;
-  width: 80px;
-  height: 80px;
+  width: 70px;
+  height: 70px;
 }

@@ -1,16 +1,23 @@
 import React from 'react';
+import styled from 'styled-components';
 import About from './Sections/About';
-import Statistic from './Sections/Statistic'
+import Statistic from './Sections/Statistic/Statistic';
 import Info from './Sections/Info';
 
 const Article = (props) => {
   return (
-    <article>
+    <MainArticle>
       <About />
       <Statistic />
       <Info />
-    </article>
+    </MainArticle>
   )
 }
+
+const MainArticle = styled.article`
+  position: relative;
+  z-index: 10;
+  background-color: #000000;
+`;
 
 export default Article;
