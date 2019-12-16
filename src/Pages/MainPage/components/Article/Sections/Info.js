@@ -1,6 +1,6 @@
 import React from 'react';
 import styled from 'styled-components';
-import BackGuitar from '../../../../../img/info_guitar.png';
+import BackGuitar from '../../../../../img/Page/info_guitar.png';
 import Paragraph from '../../Common/Paragraph';
 import Container from '../../Common/Container';
 

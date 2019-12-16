@@ -1,7 +1,7 @@
 import React, { Component } from 'react';
 import styled from 'styled-components';
 
-import BlackBlure from '../../img/darkener.png';
+import BlackBlure from '../../img/Page/darkener.png';
 
 // Page's parts
 import Showcase from './components/Showcase/Showcase';

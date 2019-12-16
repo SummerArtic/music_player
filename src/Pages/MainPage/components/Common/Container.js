@@ -8,7 +8,7 @@ const Container = (props) => {
 }
 
 const FlexContainer = styled.div`
-  width: 700px;
+  width: 800px;
   padding-top: ${props => props.paddingTop ? props.paddingTop : '0'};
   margin-right: 40%;
   margin-left: 15%;

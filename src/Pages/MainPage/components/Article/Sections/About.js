@@ -2,7 +2,7 @@ import React from 'react';
 import Paragraph from '../../Common/Paragraph';
 import HeaderRed from '../../Common/HeaderRed';
 import styled from 'styled-components';
-import BackgroundImage from '../../../../../img/laptop.png';
+import BackgroundImage from '../../../../../img/Page/laptop.png';
 
 
 const About = (props) => {

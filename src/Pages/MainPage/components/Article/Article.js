@@ -1,14 +1,14 @@
 import React from 'react';
 import styled from 'styled-components';
 import About from './Sections/About';
-import Statistic from './Sections/Statistic/Statistic';
+import StatisticPage from './Sections/Statistic/StatisticPage';
 import Info from './Sections/Info';
 
 const Article = (props) => {
   return (
     <MainArticle>
       <About />
-      <Statistic />
+      <StatisticPage />
       <Info />
     </MainArticle>
   )

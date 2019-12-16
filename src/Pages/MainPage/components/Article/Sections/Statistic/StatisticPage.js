@@ -2,7 +2,7 @@ import React from 'react';
 import styled from 'styled-components';
 import StatBlock from './StatBlock';
 
-const Statistic = (props) => {
+const StatisticPage = (props) => {
   return (
     <StatisticFlex>
       <StatBlock number={'35842'} title={'Free Tracks'}></StatBlock>
@@ -40,4 +40,4 @@ const StatisticFlex = styled.section`
   }
 `;
 
-export default Statistic;
+export default StatisticPage;

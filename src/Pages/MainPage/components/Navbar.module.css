@@ -4,10 +4,13 @@ nav {
   justify-content: center;
   align-items: center;
   padding: 2rem 0;
+  width: 100%;
 }
 
 .Navbar {
   display: flex;
+  width: 100%;
+  justify-content: space-between;
 }
 
 .Navbar li {
@@ -17,14 +20,14 @@ nav {
   margin: 0 1rem;
 }
 
-li:hover {
+.Navbar li:hover {
   color: #f23005;
   border-bottom: 2px solid #f23005;
 }
 
 .Logo {
-  background: url("../../../img/logo.png") no-repeat center center/cover;
-  width: 70px;
+  background: url("../../../img/Page/logo.png") no-repeat center center/cover;
+  width: 100px;
   height: 70px;
   margin-right: 1rem;
 }
