@@ -33,5 +33,9 @@ const PlayerPage = styled.div`
 const MusicPlayerGrid = styled.div`
   display: grid;
   grid-template-columns: 1fr 4fr 1fr;
+
+  @media (max-width: 950px) {
+    grid-template-columns: 1fr 2fr;
+  }
 `;
 export default MusicPlayer;

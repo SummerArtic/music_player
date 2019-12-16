@@ -23,6 +23,7 @@ const CenterPart = (props) => {
             <i className="fas fa-search fa-stack-1x fa-inverse" style={{ backgroundColor: '#f23005', border: '1px solid #fff', borderRadius: '50%' }}></i>
           </span></Search>
       </HeaderWrapper>
+      <Par>TOP ARTIST OF THIS WEEK</Par>
       <AlbumsCovers>
         <TopArtist src={TopArt} />
         <Album src={Frozen}
@@ -41,7 +42,6 @@ const CenterPart = (props) => {
           width="300" height="300" />
         <Album src={Dragons}
           width="300" height="300" />
-
       </AlbumsCovers>
     </Center >
   )
@@ -85,22 +85,47 @@ const SearchInput = styled.input`
     color: #fff;
 `;
 
+const Par = styled.p`
+    color: #fff;
+    margin: 1rem 0;
+`
+
 const AlbumsCovers = styled.div`
   overflow: auto;
   width: 100%;
   display: grid;
   grid-template-columns: repeat(3, 1fr);
   grid-gap: 1rem;
+
+  @media (max-width: 950px) {
+    grid-template-columns: repeat(2, 1fr);
+    padding-right: 1rem;
+  }
+  @media (max-width: 600px) {
+    grid-template-columns: 1fr;
+  }
 `;
 
 const TopArtist = styled.img`
   width: 100%;
   height: auto;
   grid-column: 1/4;
+
+  @media (max-width: 950px) {
+    grid-column: 1/3;
+  }
+  @media (max-width: 600px) {
+    grid-column: 1/2;
+  }
 `;
 const Album = styled.img`
   width: 100%;
   height: 300px;
+
+  @media (max-width: 950px) {
+    height: 150px;
+    width: 100%;
+  }
 `;
 
 export default CenterPart;

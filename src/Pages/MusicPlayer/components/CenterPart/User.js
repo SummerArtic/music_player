@@ -20,6 +20,10 @@ const User = (props) => {
 const UserData = styled.div`
   flex: 2;
   display: flex;
+
+  @media (max-width: 950px) {
+    flex: 1;
+  }
 `;
 
 const Avatar = styled.div`
@@ -27,6 +31,10 @@ const Avatar = styled.div`
   background-size: 100% 100% cover;
   height: 100%;
   width: 80px;
+
+  @media (max-width: 600px) {
+    display: none;
+  }
 `;
 
 const Data = styled.div`

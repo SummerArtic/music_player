@@ -12,7 +12,9 @@ const RightBar = (props) => {
 }
 
 const Right = styled.div`
-  
+@media (max-width: 950px) {
+  display: none;
+}
 `;
 
 const EmptyBlock = styled.div`

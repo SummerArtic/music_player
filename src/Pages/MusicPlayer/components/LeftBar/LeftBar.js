@@ -42,6 +42,12 @@ const HomeLink = styled.div`
   & > a { 
     font-size: 24px;
   }
+
+  @media (max-width: 950px) {
+    & > a { 
+      font-size: 18px;
+    }
+  }
 `;
 
 export default LeftBar;

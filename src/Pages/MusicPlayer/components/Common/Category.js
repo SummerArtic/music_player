@@ -21,12 +21,16 @@ const Par = styled.p`
   font-weight: 400;
   text-transform: uppercase;
   display: inline-block;
+  
+  @media (max-width: 950px) {
+    font-size: 14px;
+  }
 `;
 
 const FontAwesomeIcon = styled.i`
-margin-right: 1rem;
-width: 25px;
-text-align: center
+  margin-right: 0.5rem;
+  width: 25px;
+  text - align: center
 `;
 
 export default Category;

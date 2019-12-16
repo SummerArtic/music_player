@@ -4,7 +4,7 @@ import styled from 'styled-components';
 const PlaylistsItem = (props) => {
   return (
     <Playlist>
-      <ListItem>{props.children}</ListItem>
+      <ListButton ><ListItem></ListItem>{props.children}</ListButton>
     </Playlist>
   )
 }
@@ -14,16 +14,21 @@ const Playlist = styled.li`
   margin: 2rem 1.7rem;
   list-style: none;
   color: #fff;
-  border: none;
-
-  $:hover {
-    
-  }
+  border: none; 
+  padding-left: 1.5rem; 
 `
-const ListItem = styled.li`
-  margin: 2rem 1.7rem;
+const ListItem = styled.ul`
   list-style: none;
   color: #fff;
+  
+  }
 `
+const ListButton = styled.button`
+  border: none;
+  color: #fff;
+  background-color: inherit;
+  cursor: pointer
+`
+
 
 export default PlaylistsItem;
